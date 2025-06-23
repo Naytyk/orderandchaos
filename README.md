@@ -1,57 +1,57 @@
-Order vs Chaos - React Game
+# Order & Chaos - 6x6 React Game
 
-A 6x6 grid-based turn-based game built in React. Two players alternate placing symbols (crosses and circles) with opposing goals: one aims to create a straight line of five, while the other tries to prevent it.
+This is a React-based implementation of the **Order and Chaos** game played on a 6×6 grid. Two players alternate placing either a cross (X) or circle (O), aiming to achieve five-in-a-row in any direction. The game consists of two rounds, followed by a final result.
 
-🕹️ Game Rules
+## 🎮 Gameplay Overview
 
-The board is a 6x6 grid with 36 cells.
+- The board is a 6×6 grid (36 cells).
+- Each cell can be:
+  - Empty
+  - Filled with a **Cross (X)** — red
+  - Filled with a **Circle (O)** — blue
+- Players take turns placing either symbol.
 
-Two players take turns: Order and Chaos.
+### 🧠 Objective
 
-Order wins by making a straight line of 5 identical symbols (horizontal, vertical, or diagonal).
+- **Order (X)** tries to create **five** in a row (horizontal, vertical, diagonal).
+- **Chaos (O)** tries to prevent that from happening.
 
-Chaos wins by preventing all such lines.
+Each round alternates roles:
+- Round 1: Player 1 is Order, Player 2 is Chaos.
+- Round 2: Roles reverse.
+- After 2 rounds, the **Final** winner is decided based on:
+  - Who won each round
+  - Number of 4-in-a-rows
+  - Number of moves to win (in case of tiebreaker)
 
-After 2 full games (rounds), a final result is computed based on performance (including move efficiency and 4-in-a-row achievements).
+## 🧩 Features
 
-⚙️ Features
+- Click-based cell interaction
+- SVG-based rendering of X and O
+- Game state tracking for:
+  - Current grid state
+  - Moves count
+  - 4-in-a-row counters
+  - Round and final results
+- New Game button to reset everything
 
-Built with React using functional components and hooks.
+## 🛠 Tech Stack
 
-SVG-based rendering of cross and circle.
+- React (Functional Components + Hooks)
+- Vanilla CSS
+- Pure JavaScript logic (no external libraries)
 
-Tracks each round's winner and calculates a final result.
+## 🚀 Getting Started
 
-Counts 4-in-a-rows and moves per player.
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/order-chaos-game.git
+cd order-chaos-game
 
-Fully responsive design with vanilla CSS.
-
-🚀 How to Run
-
-Clone the repo:
-
-git clone https://github.com/yourusername/order-vs-chaos.git
-
-Navigate to the project:
-
-cd order-vs-chaos
-
-Install dependencies:
+    Install dependencies
 
 npm install
 
-Start the development server:
+    Run the app
 
-npm start
-
-
-📁 File Structure
-
-src/
-├── App.jsx            # Main component
-├── App.css            # Styling
-├── src
-|     |
-|    Functions/
-│     ├── logic.js       # Game logic like win conditions
-│     └── utility.js     # Combination generator
+npm run dev
