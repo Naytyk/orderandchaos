@@ -40,6 +40,8 @@ Each round alternates roles:
 - React (Functional Components + Hooks)
 - Vanilla CSS
 - Pure JavaScript logic (no external libraries)
+```bash
+Hosted link https://naytyk.github.io/orderandchaos
 
 ## 🚀 Getting Started
 
