@@ -1,6 +1,7 @@
 # Order & Chaos - 6x6 React Game
 
 This is a React-based implementation of the **Order and Chaos** game played on a 6×6 grid. Two players alternate placing either a cross (X) or circle (O), aiming to achieve five-in-a-row in any direction. The game consists of two rounds, followed by a final result.
+Hosted link https://naytyk.github.io/orderandchaos
 
 ## 🎮 Gameplay Overview
 
@@ -40,8 +41,6 @@ Each round alternates roles:
 - React (Functional Components + Hooks)
 - Vanilla CSS
 - Pure JavaScript logic (no external libraries)
-```bash
-Hosted link https://naytyk.github.io/orderandchaos
 
 ## 🚀 Getting Started
 
